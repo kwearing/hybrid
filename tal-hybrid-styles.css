@@ -33,6 +33,22 @@ a {
     font-weight: 600;
 }
 
+@keyframes pulse {
+    from {
+        transform: scale3d(1, 1, 1);
+      }
+    
+      50% {
+        transform: scale3d(1.05, 1.05, 1.05);
+      }
+    
+      to {
+        transform: scale3d(1, 1, 1);
+      }
+
+      
+    }
+
 .header {
     display: flex;
     flex-direction: column;
@@ -92,8 +108,13 @@ a {
     width: auto;
     height: 600px;
     margin: 0;
-    padding: 2.5rem;
+    padding: 2.5rem 1.5rem;
     border-radius: 0 10rem 0 0;
+}
+
+.banner-intro ul {
+    padding-left: 2rem;
+    list-style-type: square;
 }
 
 .banner-intro-cta, .quote-form-cta {
@@ -109,7 +130,7 @@ a {
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 2rem 0rem;
+    padding: 1rem 0rem;
 }
 
 .rewards-icon {
@@ -120,20 +141,24 @@ a {
 .rewards img {
     height: 60px;
     width: auto;
-    padding: 0 0 0 2.5rem;
+    padding: 0.5rem 0 0 2rem;
 }
 
 .rewards-copy {
     display: flex;
     flex-direction: column;
     width: auto;
-    padding: 0 2.5rem;
+    padding: 0 1rem 0 2rem;
 }
 
 .rewards-copy>h2 {
     color: #80C342;
-    font-size: large;
+    font-size: 24px;
     line-height: 1.75rem;
+    padding-right: 2rem;
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
 }
 
 .rewards-copy>p {
@@ -197,8 +222,15 @@ input {
     background-color: white;
     box-shadow: 0 1rem 2.5rem -0.75rem rgba(51, 63, 72, 0.11);
     border-radius: 0.25rem;
-    border: solid #303e465e 0.1rem;
+    border: solid #989fa3 0.1rem;
     line-height: 1rem;
+}
+
+input:focus {
+    background-color: #e6f3d9;
+    border: none;
+    border-color: red;
+    outline: none;
 }
 
 input[placeholder] {
@@ -452,8 +484,12 @@ footer {
         width: 300px;
         height: 600px;
         margin: 0 15rem;
-        padding: 2.5rem;
+        padding: 2.5rem 1rem;
         border-radius: 0;
+    }
+
+    .banner-intro ul {
+        padding-left: 2rem
     }
 
     .banner-intro-cta {
