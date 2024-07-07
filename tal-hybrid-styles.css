@@ -1,0 +1,669 @@
+/*MOBILE SPECS*/
+html {
+    scroll-behavior:auto;
+}
+
+body {
+    margin: 0;
+    background-color: #303E46;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, p, ul, .footer-nav-contents {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    padding: 0.5rem 1.5rem 0.5rem 1rem;
+    line-height: 1.75rem;
+    color: #303e46;
+}
+
+h2 {
+    font-size: x-large;
+    line-height: 1.5rem;
+}
+
+h3 {
+    font-size: large;
+}
+
+a {
+    text-decoration: none;
+    color: #303E46;
+    font-weight: 600;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.header-logo-product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-logo-product img {
+    height: 40px;
+    width: auto;
+    padding-bottom: 0.5rem;
+}
+
+.header-product>h1 {
+    font-size: x-large;
+    color: white;
+    line-height: 0.75rem;
+    display: inline-block;
+    padding: 0.75rem 0.15rem 1rem 0.15rem;
+}
+
+.header-awards img {
+    width: auto;
+    height: 65px;
+}
+
+#canstar {
+    width: auto;
+    height: 80px;
+}
+
+.header-buttons {
+    display: none;
+}
+
+.banner {
+    height: 600px;
+    background-image: url(https://i.imgur.com/PmqJwM1.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-position-x: left;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 10rem 0 0;
+}
+
+.banner-intro {
+    background-color: #f4f4f4de;
+    width: auto;
+    height: 600px;
+    margin: 0;
+    padding: 2.5rem;
+    border-radius: 0 10rem 0 0;
+}
+
+.banner-intro-cta, .quote-form-cta {
+    background-color: #7CBC34;
+    border-radius: 0.25rem;
+    text-transform: uppercase;
+    padding: 0.75rem;
+}
+
+.rewards {
+    background-color: #303E46;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 2rem 0rem;
+}
+
+.rewards-icon {
+    display: block;
+    width: 15%;
+}
+
+.rewards img {
+    height: 60px;
+    width: auto;
+    padding: 0 0 0 2.5rem;
+}
+
+.rewards-copy {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    padding: 0 2.5rem;
+}
+
+.rewards-copy>h2 {
+    color: #80C342;
+    font-size: large;
+    line-height: 1.75rem;
+}
+
+.rewards-copy>p {
+    color: white;
+    line-height: 1.25rem;
+    font-size: 15px;
+}
+
+.quote-form {
+    background-color: white;
+    height: fit-content;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+    margin-top: auto;
+    padding: 2rem 1rem;
+    z-index: 100;
+}
+
+.quote-form #quote-form-desktop {
+    padding-bottom: 20rem;
+}
+
+#quote-form-mobile .quote-form-intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#digicert-logo {
+    height: 40px;
+    width: auto;
+    padding-left: 1rem;
+}
+
+.quote-help {
+    width: 30%;
+}
+
+#quote-form-input {
+    margin-bottom: 1rem;
+    padding-left: 0.5rem;
+}
+
+#quote-form-input>p, #quote-form-get-in-touch>p {
+    color: #303E46;
+    font-size: medium;
+    line-height: 1.5rem;
+    font-weight: 500;
+    padding-left: 0.5rem;
+}
+
+input {
+    display:inline-block;
+    margin: 0.25rem 0.5rem;
+    padding: 0.5rem;
+    background-color: white;
+    box-shadow: 0 1rem 2.5rem -0.75rem rgba(51, 63, 72, 0.11);
+    border-radius: 0.25rem;
+    border: solid #303e465e 0.1rem;
+    line-height: 1rem;
+}
+
+input[placeholder] {
+    color: white;
+    font-size: small;
+  }
+
+.quote-form>h2 {
+    font-size: large;
+    font-weight: 400;
+}
+
+.quote-form>h3 {
+    font-size: small;
+    text-transform: uppercase;
+    color: #80c342;
+}
+
+#quote-form-help {
+    font-size: medium;
+    color: #303E46;
+    padding-top: 1.5rem;
+    padding-bottom: 0;
+    font-weight: 600;
+}
+
+#quote-form-mobile li {
+    margin-left: 1rem;
+    list-style: square;
+    font-size: 15px;
+}
+
+.quote-form .quote-form-cta {
+    color: #303E46!important;
+    font-weight: 600!important;
+}
+
+#quote-form-mobile a {
+    color: #80C342;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+#quote-form-desktop {
+    display: none;
+}
+
+.about-tal {
+    background-color: white;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.about-tal-faqs {
+    margin: 0rem;
+    padding: 1.5rem 0;
+    background-color: #303E46;
+}
+
+.about-tal-faqs .accordion {
+    border: white solid 0.1rem;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    padding: 0.5rem 0;
+}
+
+.about-tal-faqs .accordion p, .about-tal-faqs h2 {
+    color: white;
+}
+
+.about-tal-faqs .accordion img {
+    height: 30px;
+    width: auto;
+    padding-top: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.about-tal-why {
+    margin: 0rem;
+    padding: 1.5rem 0;
+}
+
+.about-tal-why>h2 {
+    color: #303e46;
+}
+
+.about-tal-why-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    justify-items: flex-start;
+    align-items: start;
+    width: auto;
+    padding: 2rem 1rem;
+    margin: 0;
+}
+
+.about-tal-why-info-copy {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 0.5rem 0;
+}
+
+.about-tal-why img {
+    width: 45px;
+    height: auto;
+}
+
+footer {
+    background-color: white;
+    display: block;
+    padding: 2rem 0rem 0rem 0;
+    margin: 0;
+    width: auto;
+}
+
+#footer-logo {
+    padding-bottom: 1rem;
+}
+
+.footer-nav-contents {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    }
+
+#footer-nav-contents-col-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+
+#footer-nav-contents-col-1 img {
+    height: 30px;
+    width: auto;
+    padding-bottom: 0;
+    }
+    
+#footer-nav-contents-col-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links {
+    display: block;
+}
+
+.footer-nav-contents>h3 {
+    padding: 1rem 0 0.5rem 0;
+    font-size: medium;
+}
+
+.footer-links>a {
+    padding-right: 0.5rem;
+    padding-bottom: 1rem;
+    text-decoration: none;
+    color: #80c342;
+    font-size: smaller;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.footer-nav-contents>p {
+    display: inline-block;
+    font-size: smaller;
+    color: #303E46;
+    line-height: 1.15rem;
+    padding: 0;
+}
+
+/*DESKTOP SPECS*/
+@media (min-width: 1200px) {   
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 15rem;
+    }
+
+    .header-logo-product {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-logo {
+        border-right: #7CBC34;
+        border-style: solid;
+        border-width: 0 0.15rem 0 0;
+        padding: 0.5rem 1.5rem 0.5rem 1rem;
+    }
+
+    .header-product>h1 {
+        padding: 0.35rem 0.5rem;
+    }
+
+    .header-product {
+        display: flex;
+        flex-direction: column;
+        padding-left: 1rem;
+    }
+
+    .header-awards img {
+        width: auto;
+        height: 75px;
+        padding: 0 0.25rem;
+    }
+    
+    #canstar {
+        width: auto;
+        height: 90px;
+    }
+
+    .header-buttons {
+        display: none;
+        flex-direction: row;
+    }
+
+    .header-phone {
+        background-color: #EFEFD2;
+        border-radius: 0.5rem;
+        margin: 0 1rem 0 0;
+    }
+
+    .banner {
+        height: 600px;
+        background-image: url(https://i.imgur.com/PmqJwM1.jpeg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        border-radius: 0;
+        background-attachment: scroll;
+    }
+
+    .banner-intro {
+        background-color: #f4f4f4de;
+        width: 300px;
+        height: 600px;
+        margin: 0 15rem;
+        padding: 2.5rem;
+        border-radius: 0;
+    }
+
+    .banner-intro-cta {
+        display: none;
+    }
+
+    .rewards {
+        background-color: #303E46;
+        padding: 2rem 15rem;
+    }
+
+    .rewards img {
+        height: 60px;
+        width: auto;
+        padding: 0;
+    }
+
+    .rewards-icon {
+        width: 5%;
+    }
+
+    .rewards-copy {
+        width: 50%;
+        padding: 0;
+    }
+
+    .rewards-copy>p {
+        line-height: 1.5rem;
+    }
+
+    #quote-form-mobile {
+        display: none;
+    }
+
+    #quote-form-mobile {
+        background-color: #ffffff;
+        box-shadow: 0 1rem 2.5rem -0.75rem rgba(51, 63, 72, 0.664);
+        border-radius: 0.5rem;
+        height: auto;
+        width: 25%;
+        position: fixed;
+        top: 10rem;
+        right: 0rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: stretch;
+        align-items: flex-start;
+        margin: 0.5rem 15rem 15rem 0rem;
+        padding: 1rem 1rem 2rem 1rem;
+        z-index: 100;
+    }
+
+    #quote-form-desktop .quote-form-intro {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #digicert-logo {
+        height: 40px;
+        width: auto;
+        padding-left: 1rem;
+    }
+
+    #quote-form-desktop h1 {
+        font-size: x-large;
+    }
+
+    #quote-form-desktop h2 {
+        font-size: medium;
+        padding-left: 1rem;
+    }
+
+    #quote-form-desktop h3 {
+        font-size: small;
+        color: #80c342;
+    }
+
+    #quote-form-help {
+        font-size: medium;
+        color: #303E46;
+        padding-top: 1.5rem;
+        padding-bottom: 0;
+        font-weight: 600;
+    }
+
+    #quote-form-desktop li {
+        margin-left: 1rem;
+        list-style: square;
+    }
+
+    .quote-form .quote-form-cta {
+        color: #303E46!important;
+        font-weight: 600!important;
+    }
+
+    #quote-form-desktop a {
+        color: #80C342;
+        text-decoration: none;
+        font-weight: 400;
+    }
+    
+    .quote-help {
+        width: 30%;
+    }
+
+    #quote-form-input {
+        margin-bottom: 1rem;
+    }
+    
+    #quote-form-input>p, #quote-form-get-in-touch>p {
+        color: #303E46;
+        font-size: medium;
+        line-height: 1.5rem;
+        font-weight: 500;
+    }
+    
+    input {
+        display:inline-block;
+        margin: 0.25rem 0.75rem;
+        padding: 0.5rem;
+        background-color: white;
+        box-shadow: 0 1rem 2.5rem -0.75rem rgba(51, 63, 72, 0.11);
+        border-radius: 0.25rem;
+        border: solid #303e465e 0.1rem;
+        line-height: 1rem;
+    }
+    
+    input[placeholder] {
+        color: white;
+        font-size: small;
+      }
+
+    .about-tal {
+        background-color: white;
+        padding: 0 15rem;
+        left: 0rem;
+        width: 100%;
+        display: block;
+        margin: 0;   
+        z-index: 1;
+    }
+
+    .about-tal-faqs {
+        padding: 2rem 0;
+        background-color: white;
+    }
+
+    .about-tal-faqs .accordion {
+        border: #303e46 solid 0.1rem;
+        width: 35%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1rem 0;
+        border-radius: 0.25rem;
+    }
+
+    .about-tal-faqs .accordion p, .about-tal-faqs h2 {
+        color: #303e46;
+    }
+
+    .about-tal-faqs h2, .about-tal-why h2 {
+        padding-left: 0;
+    }
+
+    .about-tal-faqs .accordion img {
+        height: 20px;
+        width: auto;
+        padding-right: 1rem;
+    }
+
+    .about-tal-why-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        flex-direction: row;
+        justify-items: center;
+        align-items: start;
+        width: 35%;
+        padding: 2rem 0;
+        margin: 0;
+    }
+
+    .about-tal-why-info-copy {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        padding: 0.5rem 0;
+    }
+
+    .about-tal-why img {
+        width: 45px;
+        height: auto;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 2rem 0rem;
+        width: 38%;
+    }
+    
+    .footer-nav-contents {
+        margin: 0px 0px 15px 0px;
+        padding-left: 0;
+        }
+
+}
