@@ -226,6 +226,10 @@ input {
     line-height: 1rem;
 }
 
+#form {
+    margin-left: 6px;
+}
+
 input:focus {
     background-color: #e6f3d9;
     border: none;
