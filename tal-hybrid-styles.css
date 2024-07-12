@@ -27,10 +27,29 @@ h3 {
     font-size: large;
 }
 
+p {
+    font-size: 15px;
+    line-height: 1.5rem;
+    font-weight: 400;
+}
+
 a {
     text-decoration: none;
     color: #303E46;
     font-weight: 600;
+}
+
+li {
+    list-style: disc;
+    color: #80C342;
+}
+
+li span {
+    color: #303E46;
+    font-size: 15px;
+    line-height: 1rem;
+    font-weight: 400;
+    padding-left: -10px;
 }
 
 @keyframes pulse {
@@ -80,12 +99,12 @@ a {
 
 .header-awards img {
     width: auto;
-    height: 65px;
+    height: 70px;
 }
 
 #canstar {
     width: auto;
-    height: 80px;
+    height: 85px;
 }
 
 .header-buttons {
@@ -104,7 +123,7 @@ a {
 }
 
 .banner-intro {
-    background-color: #f4f4f4de;
+    background-color: #f4f4f4e7;
     width: auto;
     height: 600px;
     margin: 0;
@@ -114,7 +133,6 @@ a {
 
 .banner-intro ul {
     padding-left: 2rem;
-    list-style-type: square;
 }
 
 .banner-intro-cta, .quote-form-cta {
@@ -166,6 +184,28 @@ a {
     line-height: 1.25rem;
     font-size: 15px;
 }
+
+.rewards-copy a {
+    color: #80C342;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+/*QUOTE FORM IMG*/
+
+.quote-form-img {
+    position: relative;
+    top: 0rem;
+    right: 0rem;
+    z-index: 100;
+}
+
+.quote-form-img img {
+    width: 100%;
+
+}
+
+/*QUOTE FORM MOBILE AND DESKTOP*/
 
 .quote-form {
     background-color: white;
@@ -452,13 +492,13 @@ footer {
 
     .header-awards img {
         width: auto;
-        height: 75px;
+        height: 80px;
         padding: 0 0.25rem;
     }
     
     #canstar {
         width: auto;
-        height: 90px;
+        height: 95px;
     }
 
     .header-buttons {
@@ -484,7 +524,7 @@ footer {
     }
 
     .banner-intro {
-        background-color: #f4f4f4de;
+        background-color: #f4f4f4e7;
         width: 300px;
         height: 600px;
         margin: 0 15rem;
@@ -493,7 +533,7 @@ footer {
     }
 
     .banner-intro ul {
-        padding-left: 2rem
+        padding-left: 2rem;
     }
 
     .banner-intro-cta {
@@ -523,6 +563,24 @@ footer {
     .rewards-copy>p {
         line-height: 1.5rem;
     }
+
+    /*QUOTE FORM IMG*/
+
+    .quote-form-img {
+        position: absolute;
+        top: 12rem;
+        right: 15rem;
+        z-index: 100;
+    }
+
+    .quote-form-img img {
+        width: 100%;
+        border: white 0.5rem solid;
+        border-radius: 0.5rem;
+        box-shadow: 0 1rem 2.5rem -0.75rem rgba(51, 63, 72, 0.664);
+    }
+
+    /*QUOTE FORM MOBILE AND DESKTOP*/
 
     #quote-form-mobile {
         display: none;
