@@ -29,7 +29,7 @@ h3 {
 
 p {
     font-size: 15px;
-    line-height: 1.5rem;
+    line-height: 1.35rem;
     font-weight: 400;
 }
 
@@ -389,7 +389,7 @@ input[placeholder] {
 }
 
 .about-tal-why img {
-    width: 45px;
+    width: 40px;
     height: auto;
 }
 
@@ -734,22 +734,22 @@ footer {
         justify-items: center;
         align-items: start;
         width: 35%;
-        padding: 2rem 0;
+        padding: 2rem 0.25rem;
         margin: 0;
     }
 
     .about-tal-why-info-copy {
         display: flex;
-        justify-content: center;
-        align-items: start;
+        justify-content: flex-start;
+        align-items: flex-start;
         padding: 0.5rem 0;
     }
 
     .about-tal-why img {
-        width: 45px;
+        width: 40px;
         height: auto;
     }
-
+    
     footer {
         display: flex;
         flex-direction: column;
@@ -763,5 +763,9 @@ footer {
         margin: 0px 0px 15px 0px;
         padding-left: 0;
         }
+
+    .footer-nav-contents>p {
+        line-height: 1.15rem;
+    }
 
 }
