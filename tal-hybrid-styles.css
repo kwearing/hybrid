@@ -113,17 +113,17 @@ li span {
 
 .banner {
     height: 600px;
-    background-image: url(https://i.imgur.com/PmqJwM1.jpeg);
+    background-image: url(https://i.imgur.com/qeCMtQS.jpeg);
     background-position: center;
     background-size: cover;
-    background-position-x: left;
+    background-position-x: center;
     display: flex;
     flex-direction: column;
     border-radius: 0 10rem 0 0;
 }
 
 .banner-intro {
-    background-color: #f4f4f4e7;
+    background-color: #f4f4f4d8;
     width: auto;
     height: 600px;
     margin: 0;
@@ -511,7 +511,7 @@ footer {
 
     .banner {
         height: 700px;
-        background-image: url(https://i.imgur.com/PmqJwM1.jpeg);
+        background-image: url(https://i.imgur.com/qeCMtQS.jpeg);
         background-position: center;
         background-size: cover;
         display: flex;
