@@ -9,7 +9,7 @@ body {
     overflow-x: hidden;
 }
 
-h1, h2, h3, h4, p, ul, .footer-nav-contents {
+h1, h2, h3, h4, p, ul, .footer-nav-contents, .accordion-body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     text-align: left;
@@ -18,9 +18,13 @@ h1, h2, h3, h4, p, ul, .footer-nav-contents {
     color: #303e46;
 }
 
+h1 {
+    font-size: 1.75rem;
+}
+
 h2 {
-    font-size: x-large;
-    line-height: 1.5rem;
+    font-size: 1.3125rem;
+    line-height: 1.3333rem;
 }
 
 h3 {
@@ -97,9 +101,15 @@ li span {
     padding: 0.75rem 0.15rem 1rem 0.15rem;
 }
 
+.header-awards {
+    display: flex;
+    align-items: flex-end;
+}
+
 .header-awards img {
     width: auto;
     height: 70px;
+    padding: 0 0.15rem;
 }
 
 #canstar {
@@ -329,13 +339,52 @@ input[placeholder] {
     padding: 0;
 }
 
+.about-tal-faqs h2 {
+    color: #303E46!important;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
 .about-tal-faqs {
     margin: 0rem;
     padding: 1.5rem 0;
-    background-color: #303E46;
+    background-color: #f4f5f6;
 }
 
 .about-tal-faqs .accordion {
+    width: 100%;
+    border: 5px solid #f4f5f6;
+}
+
+.about-tal-faqs .accordion-item {
+    padding: 0;
+    margin-bottom: 0.25rem;
+}
+
+.about-tal-faqs .accordion-header {
+    padding-left: 0;
+}
+
+.about-tal-faqs .accordion-button:not(collapsed) {
+    background-color: white;
+    color: #303E46;
+}
+
+.about-tal-faqs .accordion-button::after {
+    background-image: url(https://i.imgur.com/3bjxQYz.jpeg);
+}
+
+.about-tal-faqs .accordion-body p {
+    padding-left: 0;
+}
+
+.about-tal-faqs .accordion-body a {
+    font-weight: 400;
+    color: #303E46;
+    border-bottom: 1px solid #80C342;
+}
+
+.about-tal-faqs .static-accordion {
     border: white solid 0.1rem;
     width: auto;
     display: flex;
@@ -347,11 +396,11 @@ input[placeholder] {
     padding: 0.5rem 0;
 }
 
-.about-tal-faqs .accordion p, .about-tal-faqs h2 {
+.about-tal-faqs .static-accordion p, .about-tal-faqs h2 {
     color: white;
 }
 
-.about-tal-faqs .accordion img {
+.about-tal-faqs .static-accordion img {
     height: 30px;
     width: auto;
     padding-top: 0.5rem;
@@ -413,6 +462,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     }
 
 #footer-nav-contents-col-1 img {
@@ -453,6 +503,10 @@ footer {
     padding: 0;
 }
 
+#footer-nav-contents-col-1 #digicert-logo {
+    height: 40px;
+}
+
 /*DESKTOP SPECS*/
 @media (min-width: 1200px) {   
     .header {
@@ -485,6 +539,11 @@ footer {
         display: flex;
         flex-direction: column;
         padding-left: 1rem;
+    }
+
+    .header-awards {
+        display: flex;
+        align-items: flex-end;
     }
 
     .header-awards img {
@@ -522,7 +581,7 @@ footer {
 
     .banner-intro {
         background-color: #f4f4f4e7;
-        width: 300px;
+        width: 400px;
         height: 600px;
         margin: 0 15rem;
         padding: 2.5rem 1rem;
@@ -700,17 +759,56 @@ footer {
     }
 
     .about-tal-faqs .accordion {
-        border: #303e46 solid 0.1rem;
-        width: 35%;
+        border: 1px solid #D4D4D4;
+        width: 50%;
+    }
+
+    .about-tal-faqs .accordion-item {
+        padding: 0;
+        margin-bottom: 0rem;
+    }
+
+    .about-tal-faqs .accordion-header {
+        padding: 0;
+    }    
+
+    .about-tal-faqs .accordion-button:not(collapsed) {
+        background-color: white;
+        color: #303E46;
+    }
+
+    .about-tal-faqs .accordion-button::after {
+        background-image: url(https://i.imgur.com/3bjxQYz.jpeg);
+    }
+
+    .about-tal-faqs .accordion-header button {
+        font-weight: 500;
+        padding-left: 1rem;
+    }
+
+    .about-tal-faqs .accordion-body p {
+        padding-left: 0;
+    }
+
+    .about-tal-faqs .accordion-body a {
+        font-weight: 400;
+        font-size: 15px;
+        color: #303E46;
+        border-bottom: 1px solid #80C342;
+    }
+
+    .about-tal-faqs .static-accordion {
+        border: none;
+        width: 50%;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
         align-items: center;
         margin: 1rem 0;
         border-radius: 0.25rem;
     }
 
-    .about-tal-faqs .accordion p, .about-tal-faqs h2 {
+    .about-tal-faqs .static-accordion p, .about-tal-faqs h2 {
         color: #303e46;
     }
 
@@ -718,7 +816,7 @@ footer {
         padding-left: 0;
     }
 
-    .about-tal-faqs .accordion img {
+    .about-tal-faqs .static-accordion img {
         height: 20px;
         width: auto;
         padding-right: 1rem;
@@ -728,11 +826,11 @@ footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
         flex-direction: row;
-        justify-items: center;
+        justify-items: start;
         align-items: start;
-        width: 35%;
-        padding: 2rem 0.25rem;
-        margin: 0;
+        width: 50%;
+        padding: 0;
+        margin: 1rem 0;
     }
 
     .about-tal-why-info-copy {
@@ -743,17 +841,17 @@ footer {
     }
 
     .about-tal-why img {
-        width: 40px;
+        width: 45px;
         height: auto;
     }
-    
+
     footer {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
         padding: 2rem 0rem;
-        width: 38%;
+        width: 50%;
     }
     
     .footer-nav-contents {
