@@ -37,7 +37,7 @@ html {
 body {
     margin: 0;
     background-color: #303E46;
-    overflow-x: hidden;
+    overflow-x:auto;
 }
 
 h1, h2, h3, h4, p, ul, .footer-nav-contents, .accordion-body {
@@ -153,10 +153,10 @@ sup a {
 
 .banner {
     height: 600px;
-    background-image: url(https://i.imgur.com/qeCMtQS.jpeg);
+    background-image: url(https://i.imgur.com/l0Ugur8.jpg);
     background-position: center;
     background-size: cover;
-    background-position-x: center;
+    background-position-x: left;
     display: flex;
     flex-direction: column;
     border-radius: 0 10rem 0 0;
@@ -595,7 +595,7 @@ footer {
 
     .banner {
         height: 700px;
-        background-image: url(https://i.imgur.com/qeCMtQS.jpeg);
+        background-image: url(https://i.imgur.com/l0Ugur8.jpg);
         background-position: center;
         background-size: cover;
         display: flex;
