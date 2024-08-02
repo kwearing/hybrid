@@ -102,22 +102,6 @@ sup a {
     color: #f15a24;
 }
 
-@keyframes pulse {
-    from {
-        transform: scale3d(1, 1, 1);
-      }
-    
-      50% {
-        transform: scale3d(1.05, 1.05, 1.05);
-      }
-    
-      to {
-        transform: scale3d(1, 1, 1);
-      }
-
-      
-    }
-
 .header {
     display: flex;
     flex-direction: column;
@@ -136,7 +120,7 @@ sup a {
 .header-logo-product img {
     height: 40px;
     width: auto;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.75rem;
 }
 
 .header-product>h1 {
@@ -410,6 +394,14 @@ input[placeholder] {
 
 .about-tal-faqs .accordion-header {
     padding: 0;
+}
+
+.about-tal-faqs .accordion-header button {
+    font-weight: 700;
+    padding-left: 1rem;
+    line-height: 1.35;
+    font-size: 15px;
+    margin: 0.5rem 0;
 }
 
 .about-tal-faqs .accordion-button:not(collapsed) {
@@ -816,8 +808,9 @@ footer {
     }
 
     .about-tal-faqs .accordion-header button {
-        font-weight: 500;
+        font-weight: 700;
         padding-left: 1rem;
+        margin: 0.25rem 0;
     }
 
     .about-tal-faqs .accordion-body p {
@@ -895,7 +888,7 @@ footer {
     }
     
     #footer-nav-contents-col-1 #digicert-logo {
-        height: 50px;
+        height: 40px;
     }
 
     .footer-links>a {
