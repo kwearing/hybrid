@@ -545,6 +545,10 @@ footer {
         align-items: center;
     }
 
+    .header-logo-product img {
+        height: 50px;
+    }
+
     .header-logo {
         border-right: #7CBC34;
         border-style: solid;
