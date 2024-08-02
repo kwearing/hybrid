@@ -1,4 +1,35 @@
 /*MOBILE SPECS*/
+@import url("//hello.myfonts.net/count/2f9e5e");@font-face {
+    font-family: "Pluto Sans Condensed";
+    src: url("/assets/font/PlutoSansCondRegular.eot");
+    src: url("/assets/font/PlutoSansCondRegular.woff") format("woff"),url("/assets/font/PlutoSansCondRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal
+}
+
+@font-face {
+    font-family: "Pluto Sans";
+    src: url("/assets/font/PlutoSansBold.eot");
+    src: url("/assets/font/PlutoSansBold.woff") format("woff"),url("/assets/font/PlutoSansBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700
+}
+
+@font-face {
+    font-family: "Pluto Sans";
+    src: url("/assets/font/PlutoSansMedium.eot");
+    src: url("/assets/font/PlutoSansMedium.woff") format("woff"),url("/assets/font/PlutoSansMedium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 500
+}
+
+@font-face {
+    font-family: "Pluto Sans";
+    src: url("/assets/font/PlutoSansLight.otf");
+    font-style: normal;
+    font-weight: 100
+}
+
 html {
     scroll-behavior:auto;
 }
@@ -11,36 +42,39 @@ body {
 
 h1, h2, h3, h4, p, ul, .footer-nav-contents, .accordion-body {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Pluto Sans", Arial, Helvetica, sans-serif;
     text-align: left;
     padding: 0.5rem 1.5rem 0.5rem 1rem;
     line-height: 1.75rem;
     color: #303e46;
+    letter-spacing: -0.25px;
+    font-weight: 700;
 }
 
 h1 {
     font-size: 1.75rem;
+    line-height: 1.1;
 }
 
 h2 {
-    font-size: 1.3125rem;
-    line-height: 1.3333rem;
+    font-size: 28px;
+    line-height: 32px;
 }
 
 h3 {
     font-size: large;
 }
 
-p {
+p, .footer-nav-contents>a {
     font-size: 15px;
     line-height: 1.35rem;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 a {
     text-decoration: none;
     color: #303E46;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 li {
