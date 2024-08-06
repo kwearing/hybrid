@@ -31,13 +31,13 @@
 }
 
 html {
-    scroll-behavior:auto;
+    scroll-behavior: auto;
 }
 
 body {
     margin: 0;
     background-color: #303E46;
-    overflow-x:auto;
+    overflow: auto;
 }
 
 h1, h2, h3, h4, p, ul, .footer-nav-contents, .accordion-body {
@@ -153,10 +153,10 @@ sup a {
 
 .banner {
     height: 600px;
-    background-image: url(https://i.imgur.com/l0Ugur8.jpg);
+    background-image: url(https://i.imgur.com/h0s1FbL.jpg);
     background-position: center;
     background-size: cover;
-    background-position-x: left;
+    background-position-x: 35%;
     display: flex;
     flex-direction: column;
     border-radius: 0 10rem 0 0;
@@ -529,7 +529,12 @@ footer {
 }
 
 /*DESKTOP SPECS*/
-@media (min-width: 1200px) {   
+@media (min-width: 992px) {   
+    .container {
+        max-width: 100%;
+        height: auto;        
+    }
+
     .header {
         display: flex;
         flex-direction: row;
@@ -595,8 +600,8 @@ footer {
 
     .banner {
         height: 700px;
-        background-image: url(https://i.imgur.com/l0Ugur8.jpg);
-        background-position: center;
+        background-image: url(https://i.imgur.com/h0s1FbL.jpg);
+        background-position-y: 75%;
         background-size: cover;
         display: flex;
         flex-direction: column;
@@ -654,7 +659,7 @@ footer {
 
     .quote-form-img {
         position: absolute;
-        top: 15rem;
+        top: 20rem;
         right: 15rem;
         z-index: 100;
     }
@@ -666,112 +671,7 @@ footer {
         box-shadow: 0 1rem 2.5rem -0.75rem rgba(51, 63, 72, 0.664);
     }
 
-    /*QUOTE FORM MOBILE AND DESKTOP*/
-
-    #quote-form-mobile {
-        display: none;
-    }
-
-    #quote-form-mobile {
-        background-color: #ffffff;
-        box-shadow: 0 1rem 2.5rem -0.75rem rgba(51, 63, 72, 0.664);
-        border-radius: 0.5rem;
-        height: auto;
-        width: 25%;
-        position: fixed;
-        top: 10rem;
-        right: 0rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-content: stretch;
-        align-items: flex-start;
-        margin: 0.5rem 15rem 15rem 0rem;
-        padding: 1rem 1rem 2rem 1rem;
-        z-index: 100;
-    }
-
-    #quote-form-desktop .quote-form-intro {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
-    #digicert-logo {
-        height: 40px;
-        width: auto;
-        padding-left: 1rem;
-    }
-
-    #quote-form-desktop h1 {
-        font-size: x-large;
-    }
-
-    #quote-form-desktop h2 {
-        font-size: medium;
-        padding-left: 1rem;
-    }
-
-    #quote-form-desktop h3 {
-        font-size: small;
-        color: #80c342;
-    }
-
-    #quote-form-help {
-        font-size: medium;
-        color: #303E46;
-        padding-top: 1.5rem;
-        padding-bottom: 0;
-        font-weight: 600;
-    }
-
-    #quote-form-desktop li {
-        margin-left: 1rem;
-        list-style: square;
-    }
-
-    .quote-form .quote-form-cta {
-        color: #303E46!important;
-        font-weight: 600!important;
-    }
-
-    #quote-form-desktop a {
-        color: #80C342;
-        text-decoration: none;
-        font-weight: 400;
-    }
-    
-    .quote-help {
-        width: 30%;
-    }
-
-    #quote-form-input {
-        margin-bottom: 1rem;
-    }
-    
-    #quote-form-input>p, #quote-form-get-in-touch>p {
-        color: #303E46;
-        font-size: medium;
-        line-height: 1.5rem;
-        font-weight: 500;
-    }
-    
-    input {
-        display:inline-block;
-        margin: 0.25rem 0.75rem;
-        padding: 0.5rem;
-        background-color: white;
-        box-shadow: 0 1rem 2.5rem -0.75rem rgba(51, 63, 72, 0.11);
-        border-radius: 0.25rem;
-        border: solid #303e465e 0.1rem;
-        line-height: 1rem;
-    }
-    
-    input[placeholder] {
-        color: white;
-        font-size: small;
-      }
+/*ABOUT TAL*/
 
     .about-tal {
         background-color: white;
@@ -858,6 +758,8 @@ footer {
         width: 45px;
         height: auto;
     }
+
+/*FOOTER*/
 
     footer {
         display: flex;
